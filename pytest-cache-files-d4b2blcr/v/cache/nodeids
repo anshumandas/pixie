@@ -1,0 +1,10 @@
+[
+  "tests/test_core.py::test_adjust_only_inside_mask",
+  "tests/test_core.py::test_backend_registry_costs",
+  "tests/test_core.py::test_brightness_increases_mean",
+  "tests/test_core.py::test_composite_into_blends",
+  "tests/test_core.py::test_detect_and_autoconfig",
+  "tests/test_core.py::test_engine_end_to_end_fallbacks",
+  "tests/test_core.py::test_remove_background_alpha",
+  "tests/test_core.py::test_rule_based_parser"
+]

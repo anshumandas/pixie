@@ -1,0 +1,8 @@
+# Dependencies for the Pixie ZeroGPU Space (installed by Hugging Face on deploy).
+gradio>=4.0
+spaces
+diffusers>=0.27
+transformers>=4.40
+accelerate>=0.30
+torch
+Pillow

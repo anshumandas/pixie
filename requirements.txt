@@ -1,0 +1,41 @@
+# ============================================================================
+# Core dependencies — the app runs FULLY on just these, with no model
+# downloads. Click-to-select, background removal, object erase, ink/shadow
+# styles and brightness/contrast all work using built-in OpenCV methods.
+# ============================================================================
+numpy>=1.24
+opencv-python>=4.8        # includes pencilSketch / stylization (photo module)
+Pillow>=10.0
+PySide6>=6.6
+psutil>=5.9               # accurate RAM detection (optional but recommended)
+
+# ============================================================================
+# Optional upgrades — install only what you want. The app auto-detects each
+# one at launch and upgrades itself; nothing below is required to run.
+# ============================================================================
+
+# --- Sharper click-to-select (Segment Anything / MobileSAM) -----------------
+# 1) Install a PyTorch build for your machine (see https://pytorch.org):
+#      pip install torch torchvision
+# 2) Install a SAM wrapper:
+#      pip install mobile-sam          # lightweight, great on CPU
+#      # or: pip install segment-anything
+# 3) Put a checkpoint in ~/.ai_image_editor/weights/  (see README → Models)
+
+# --- High-quality object removal (LaMa) -------------------------------------
+# pip install simple-lama-inpainting
+
+# --- Generative fill / Stable-Diffusion stylise (needs a GPU) ---------------
+# pip install diffusers transformers accelerate
+
+# --- Natural-language command bar (local LLM) -------------------------------
+# pip install ollama        # then run:  ollama pull llama3.2:3b
+
+# --- Cloud backends (pick any; configure the matching env var) --------------
+# pip install replicate     # REPLICATE_API_TOKEN
+# pip install fal-client     # FAL_KEY
+# pip install gradio_client  # HF_ZEROGPU_SPACE = "you/your-space"
+# pip install modal          # modal token set
+
+# --- Running the tests ------------------------------------------------------
+# pip install pytest
